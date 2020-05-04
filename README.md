@@ -6,5 +6,5 @@ APBot is a chatbot created using deep learning. It provides information on advan
 To run the bot, use "python main.py"
 
 # Requirements
-Before running the bot, make sure that you have all the requirements. Check the file "Requirements" for the full list.
+Before running the bot, make sure that you have all the requirements. Check the file "Requirements" for the full list.  
 If you have any issues, let me know and I will try my best to assist you.
