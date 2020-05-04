@@ -1,0 +1,538 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Whats up"],
+         "responses": ["Hello", "Welcome", "What do you want to know?"],
+         "context_set": ""
+        },
+        {"tag": "goodbye",
+         "patterns": ["cya", "See you later", "Goodbye", "I am leaving", "Have a good day", "Bye", "See you next time"],
+         "responses": ["Goodbye", "See you next time"],
+         "context_set": ""
+        },
+        {"tag": "creator",
+         "patterns": ["Who created you?", "Who made you?", "Who built you?"],
+         "responses": ["My creator is Andrea Rebora (@AndreaRebora01)"],
+         "context_set": ""
+        },
+        {"tag": "age",
+         "patterns": ["How old are you?", "How old?", "What is your age", "Age?"],
+         "responses": ["I was created on May 3, 2020"],
+         "context_set": ""
+        },
+        {"tag": "name",
+         "patterns": ["What is your name?", "What should I call you?", "Whats your name?", "Who are you?", "Define yourself"],
+         "responses": ["You can call me APBot.", "I am APBot", "I am APBot, short of Advanced Persistent Bot"],
+         "context_set": ""
+        },
+          {"tag": "purpose",
+         "patterns": ["What is your purpose?", "What do you do?", "How can you help me?", "Why do you exist?", "Why are you here?"],
+         "responses": ["I can answer your questions about advanced persistent threat groups."],
+         "context_set": ""
+        },
+        {"tag": "definition",
+         "patterns": ["What is an APT?", "What is an advanced persistent threat group?", "Who is an APT?", "Advanced Persistent Threat?", "APT?"],
+         "responses": ["As explained by Roger A. Grimes (CSO), an advanced persistent threat (APT) is a cyberattack executed by criminals or nation-states with the intent to steal data or surveil systems over an extended time period. The attacker has a specific target and goal, and has spent time and resources to identify which vulnerabilities they can exploit to gain access, and to design an attack that will likely remain undetected for a long time. That attack often includes the use of custom malware."],
+         "context_set": ""
+        },
+        {"tag": "APT41_attribution",
+         "patterns": ["Which country employs APT41?", "APT41 country?", "Nationality of APT41?", "APT41 nationality?", "Country of APT41?", "Country of origin of APT41?", "APT41 nation?"],
+         "responses": ["APT41 is a Chinese state-sponsored group"],
+         "context_set": ""
+        },
+        {"tag": "APT41_target",
+         "patterns": ["Which sectors have been targeted by APT41?", "APT41 targets?", "Targets of APT41?", "APT41 victims?", "Victims of APT41?", "Organizations targeted by APT41?"],
+         "responses": ["APT41 has directly targeted organizations in at least 14 countries dating back to as early as 2012. The group’s espionage campaigns have targeted healthcare, telecoms, and the high-tech sector, and have historically included stealing intellectual property. Their cyber crime intrusions are most apparent among video game industry targeting, including the manipulation of virtual currencies, and attempted deployment of ransomware. APT41operations against higher education, travel services, and news/media firms provide some indication that the group also tracks individuals and conducts surveillance."],
+         "context_set": ""
+        },
+        {"tag": "APT41_overview",
+         "patterns": ["What is APT41?", "What is advanced persistent threat 41?", "Who is APT41?", "Advanced Persistent Threat 41?", "APT41?"],
+         "responses": ["APT41 is a prolific cyber threat group that carries out Chinese state-sponsored espionage activity in addition to financially motivated activity potentially outside of state control."],
+         "context_set": ""
+        },
+        {"tag": "APT41_vector",
+         "patterns": ["What attack vector have been used by APT41?", "APT41 attack vectors?", "Attack vectors of APT41?", "APT41 vectors?", "Vectors of APT41?", "Attack vectors leveraged by APT41?"],
+         "responses": ["APT41 often relies on spear-phishing emails with attachments such as compiled HTML (.chm) files to initially compromise their victims. Once in a victim organization, APT41 can leverage more sophisticated TTPs and deploy additional malware. For example, in a campaign running almost a year, APT41 compromised hundreds of systems and used close to 150 unique pieces of malware including backdoors, credential stealers, keyloggers, and rootkits. APT41 has also deployed rootkits and Master Boot Record (MBR) bootkits on a limited basis to hide their malware and maintain persistence on select victim systems."],
+         "context_set": ""
+        },
+        {"tag": "APT41_malware",
+         "patterns": ["What malware have been used by APT41?", "APT41 malware?", "Malware of APT41?", "APT41 associated malware?", "Associated malware of APT41?", "Malware used by APT41?"],
+         "responses": ["CRACKSHOT, GEARSHIFT, HIGHNOON, JUMPALL, POISONPLUG, HOTCHAI, LATELUNCH, LIFEBOAT, LOWKEY, NJRAT, PACMAN, PHOTO, POTROAST, ROCKBOOT, SAGEHIRE, SWEETCANDLE, SOGU, TERA, TIDYELF, WIDETONE, WINTERLOVE, XDoor, Xmrig, ZxShell"],
+         "context_set": ""
+        },
+        {"tag": "APT40_attribution",
+          "patterns": ["Which country employs APT40?", "APT40 country?", "Nationality of APT40?", "APT40 nationality?", "Country of APT40?", "Country of origin of APT40?", "APT40 nation?"],
+          "responses": ["APT40 is a Chinese state-sponsored group"],
+          "context_set": ""
+        },
+        {"tag": "APT40_target",
+          "patterns": ["Which sectors have been targeted by APT40?", "APT40 targets?", "Targets of APT40?", "APT40 victims?", "Victims of APT40?", "Organizations targeted by APT40?"],
+          "responses": ["APT40 is a Chinese cyber espionage group that typically targets countries strategically important to the Belt and Road Initiative. Although the group targets global organizations — especially those with a focus on engineering and defense — it also historically conducted campaigns against regional entities in areas such as Southeast Asia. Since at least January 2013, the group has conducted campaigns against a range of verticals including maritime targets, defense, aviation, chemicals, research/education, government, and technology organizations."],
+          "context_set": ""
+        },
+        {"tag": "APT40_overview",
+          "patterns": ["What is APT40?", "What is advanced persistent threat 40?", "Who is APT40?", "Advanced Persistent Threat 40?", "APT40?"],
+          "responses": ["FireEye Intelligence believes that APT40's operations are a cyber counterpart to China's efforts to modernize its naval capabilities; this is also manifested in targeting wide-scale research projects at universities and obtaining designs for marine equipment and vehicles. The group's operations tend to target government-sponsored projects and take large amounts of information specific to such projects, including proposals, meetings, financial data, shipping information, plans and drawings, and raw data."],
+          "context_set": ""
+        },
+        {"tag": "APT40_vector",
+          "patterns": ["What attack vector have been used by APT40?", "APT40 attack vectors?", "Attack vectors of APT40?", "APT40 vectors?", "Vectors of APT40?", "Attack vectors leveraged by APT40?"],
+          "responses": ["APT40 typically poses as a prominent individual who is probably of interest to a target to send spear-phishing emails. This includes pretending to be a journalist, an individual from a trade publication, or someone from a relevant military organization or non-governmental organization (NGO). In some instances, the group has leveraged previously compromised email addresses to send spear-phishing emails."],
+          "context_set": ""
+        },
+        {"tag": "APT40_malware",
+          "patterns": ["What malware have been used by APT40?", "APT40 malware?", "Malware of APT40?", "APT40 associated malware?", "Associated malware of APT40?", "Malware used by APT40?"],
+          "responses": ["AIRBREAK, BADFLICK, PHOTO, HOMEFRY, LUNCHMONEY, MURKYTOP, China Chopper, Beacon, BLACKCOFFEE, CVE-2017-11882, Derusbi, RoyalRoad RTF Weaponizer"],
+          "context_set": ""
+        },
+        {"tag": "APT30_attribution",
+          "patterns": ["Which country employs APT30?", "APT30 country?", "Nationality of APT30?", "APT30 nationality?", "Country of APT30?", "Country of origin of APT30?", "APT30 nation?"],
+          "responses": ["APT30 is a Chinese state-sponsored group"],
+          "context_set": ""
+        },
+        {"tag": "APT30_target",
+          "patterns": ["Which sectors have been targeted by APT30?", "APT30 targets?", "Targets of APT30?", "APT30 victims?", "Victims of APT30?", "Organizations targeted by APT30?"],
+          "responses": ["Members of the Association of Southeast Asian Nations (ASEAN)."],
+          "context_set": ""
+        },
+        {"tag": "APT30_overview",
+          "patterns": ["What is APT30?", "What is advanced persistent threat 30?", "Who is APT30?", "Advanced Persistent Threat 30?", "APT30?"],
+          "responses": ["APT30 is noted not only for sustained activity over a long period of time but also for successfully modifying and adapting source code to maintain the same tools, tactics and infrastructure since at least 2005. Evidence shows that the group prioritizes targets, most likely works in shifts in a collaborative environment and builds malware from a coherent development plan. The group has had the capability to infect air-gapped networks since 2005."],
+          "context_set": ""
+        },
+        {"tag": "APT30_vector",
+          "patterns": ["What attack vector have been used by APT30?", "APT30 attack vectors?", "Attack vectors of APT30?", "APT30 vectors?", "Vectors of APT30?", "Attack vectors leveraged by APT30?"],
+          "responses": ["APT30 uses a suite of tools that includes downloaders, backdoors, a central controller and several components designed to infect removable drives and cross air-gapped networks to steal data. APT30 frequently registers its own DNS domains for malware CnC activities."],
+          "context_set": ""
+        },
+        {"tag": "APT30_malware",
+         "patterns": ["What malware have been used by APT30?", "APT30 malware?", "Malware of APT30?", "APT30 associated malware?", "Associated malware of APT30?", "Malware used by APT30?"],
+         "responses": ["SHIPSHAPE, SPACESHIP, FLASHFLOOD"],
+         "context_set": ""
+        },
+        {"tag": "APT19_attribution",
+         "patterns": ["Which country employs APT19?", "APT19 country?", "Nationality of APT19?", "APT19 nationality?", "Country of APT19?", "Country of origin of APT19?", "APT19 nation?"],
+         "responses": ["APT19 is a Chinese state-sponsored group"],
+         "context_set": ""
+        },
+        {"tag": "APT19_target",
+         "patterns": ["Which sectors have been targeted by APT19?", "APT19 targets?", "Targets of APT19?", "APT19 victims?", "Victims of APT19?", "Organizations targeted by APT19?"],
+         "responses": ["Legal and investment"],
+         "context_set": ""
+        },
+        {"tag": "APT19_overview",
+         "patterns": ["What is APT19?", "What is advanced persistent threat 19?", "Who is APT19?", "Advanced Persistent Threat 19?", "APT19?"],
+         "responses": ["APT19 is group likely composed of freelancers, with some degree of sponsorship by the Chinese government."],
+         "context_set": ""
+        },
+        {"tag": "APT19_vector",
+         "patterns": ["What attack vector have been used by APT19?", "APT19 attack vectors?", "Attack vectors of APT19?", "APT19 vectors?", "Vectors of APT19?", "Attack vectors leveraged by APT19?"],
+         "responses": ["In 2017, APT19 used three different techniques to attempt to compromise targets. In early May, the phishing lures leveraged RTF attachments that exploited the Microsoft Windows vulnerability described in CVE 2017-0199. Toward the end of May, APT19 switched to using macro-enabled Microsoft Excel (XLSM) documents. In the most recent versions, APT19 added an application whitelisting bypass to the XLSM documents. At least one observed phishing lure delivered a Cobalt Strike payload."],
+         "context_set": ""
+        },
+        {"tag": "APT19_malware",
+         "patterns": ["What malware have been used by APT19?", "APT19 malware?", "Malware of APT19?", "APT19 associated malware?", "Associated malware of APT19?", "Malware used by APT19?"],
+         "responses": ["BEACON, COBALTSTRIKE"],
+         "context_set": ""
+        },
+        {"tag": "APT18_attribution",
+         "patterns": ["Which country employs APT18?", "APT18 country?", "Nationality of APT18?", "APT18 nationality?", "Country of APT18?", "Country of origin of APT18?", "APT18 nation?"],
+         "responses": ["APT18 is a Chinese state-sponsored group"],
+         "context_set": ""
+        },
+        {"tag": "APT18_target",
+         "patterns": ["Which sectors have been targeted by APT18?", "APT18 targets?", "Targets of APT18?", "APT18 victims?", "Victims of APT18?", "Organizations targeted by APT18?"],
+         "responses": ["Aerospace and Defense, Construction and Engineering, Education, Health and Biotechnology, High Tech, Telecommunications, Transportation."],
+         "context_set": ""
+        },
+        {"tag": "APT18_overview",
+         "patterns": ["What is APT18?", "What is advanced persistent threat 18?", "Who is APT18?", "Advanced Persistent Threat 18?", "APT18?"],
+         "responses": ["Very little has been released publicly about this group."],
+         "context_set": ""
+        },
+        {"tag": "APT18_vector",
+         "patterns": ["What attack vector have been used by APT18?", "APT18 attack vectors?", "Attack vectors of APT18?", "APT18 vectors?", "Vectors of APT18?", "Attack vectors leveraged by APT18?"],
+         "responses": ["Frequently developed or adapted zero-day exploits for operations, which were likely planned in advance. Used data from Hacking Team leak, which demonstrated how the group can shift resources (i.e. selecting targets, preparing infrastructure, crafting messages, updating tools) to take advantage of unexpected opportunities like newly exposed exploits."],
+         "context_set": ""
+        },
+        {"tag": "APT18_malware",
+         "patterns": ["What malware have been used by APT18?", "APT18 malware?", "Malware of APT18?", "APT18 associated malware?", "Associated malware of APT18?", "Malware used by APT18?"],
+         "responses": ["Gh0st RAT"],
+         "context_set": ""
+        },
+        {"tag": "APT17_attribution",
+         "patterns": ["Which country employs APT17?", "APT17 country?", "Nationality of APT17?", "APT17 nationality?", "Country of APT17?", "Country of origin of APT17?", "APT17 nation?"],
+         "responses": ["APT17 is a Chinese state-sponsored group"],
+         "context_set": ""
+        },
+        {"tag": "APT17_target",
+         "patterns": ["Which sectors have been targeted by APT17?", "APT17 targets?", "Targets of APT17?", "APT17 victims?", "Victims of APT17?", "Organizations targeted by APT17?"],
+         "responses": ["U.S. government, and international law firms and information technology companies."],
+         "context_set": ""
+        },
+        {"tag": "APT17_overview",
+         "patterns": ["What is APT17?", "What is advanced persistent threat 17?", "Who is APT17?", "Advanced Persistent Threat 17?", "APT17?"],
+         "responses": ["Conducts network intrusion against targeted organizations."],
+         "context_set": ""
+        },
+        {"tag": "APT17_vector",
+         "patterns": ["What attack vector have been used by APT17?", "APT17 attack vectors?", "Attack vectors of APT17?", "APT17 vectors?", "Vectors of APT17?", "Attack vectors leveraged by APT17?"],
+         "responses": ["The threat group took advantage of the ability to create profiles and post in forums to embed encoded CnC for use with a variant of the malware it used. This technique can make it difficult for network security professionals to determine the true location of the CnC, and allow the CnC infrastructure to remain active for a longer period."],
+         "context_set": ""
+        },
+        {"tag": "APT17_malware",
+         "patterns": ["What malware have been used by APT17?", "APT17 malware?", "Malware of APT17?", "APT17 associated malware?", "Associated malware of APT17?", "Malware used by APT17?"],
+         "responses": ["BLACKCOFFEE"],
+         "context_set": ""
+        },
+        {"tag": "APT16_attribution",
+         "patterns": ["Which country employs APT16?", "APT16 country?", "Nationality of APT16?", "APT16 nationality?", "Country of APT16?", "Country of origin of APT16?", "APT16 nation?"],
+         "responses": ["APT16 is a Chinese state-sponsored group"],
+         "context_set": ""
+        },
+        {"tag": "APT16_target",
+         "patterns": ["Which sectors have been targeted by APT16?", "APT16 targets?", "Targets of APT16?", "APT16 victims?", "Victims of APT16?", "Organizations targeted by APT16?"],
+         "responses": ["Japanese and Taiwanese organizations in the high-tech, government services, media and financial services industries."],
+         "context_set": ""
+        },
+        {"tag": "APT16_overview",
+         "patterns": ["What is APT16?", "What is advanced persistent threat 16?", "Who is APT16?", "Advanced Persistent Threat 16?", "APT16?"],
+         "responses": ["China-based group concerned with Taiwan political and journalistic matters."],
+         "context_set": ""
+        },
+        {"tag": "APT16_vector",
+         "patterns": ["What attack vector have been used by APT16?", "APT16 attack vectors?", "Attack vectors of APT16?", "APT16 vectors?", "Vectors of APT16?", "Attack vectors leveraged by APT16?"],
+         "responses": ["Spearphishing emails sent to Taiwanese media organizations and webmail addresses. Lure documents contained instructions for registration and subsequent listing of goods on a Taiwanese auction website."],
+         "context_set": ""
+        },
+        {"tag": "APT16_malware",
+         "patterns": ["What malware have been used by APT16?", "APT16 malware?", "Malware of APT16?", "APT16 associated malware?", "Associated malware of APT16?", "Malware used by APT16?"],
+         "responses": ["IRONHALO, ELMER"],
+         "context_set": ""
+        },
+        {"tag": "APT12_attribution",
+         "patterns": ["Which country employs APT12?", "APT12 country?", "Nationality of APT12?", "APT12 nationality?", "Country of APT12?", "Country of origin of APT12?", "APT12 nation?"],
+         "responses": ["APT12 is a Chinese state-sponsored group"],
+         "context_set": ""
+        },
+        {"tag": "APT12_target",
+         "patterns": ["Which sectors have been targeted by APT12?", "APT12 targets?", "Targets of APT12?", "APT12 victims?", "Victims of APT12?", "Organizations targeted by APT12?"],
+         "responses": ["Journalists, government, defense industrial base."],
+         "context_set": ""
+        },
+        {"tag": "APT12_overview",
+         "patterns": ["What is APT12?", "What is advanced persistent threat 12?", "Who is APT12?", "Advanced Persistent Threat 12?", "APT12?"],
+         "responses": ["APT12 is believed to be a cyber espionage group thought to have links to the Chinese People's Liberation Army. APT12's targets are consistent with larger People's Republic of China (PRC) goals. Intrusions and campaigns conducted by this group are in-line with PRC goals and self-interest in Taiwan."],
+         "context_set": ""
+        },
+        {"tag": "APT12_vector",
+         "patterns": ["What attack vector have been used by APT12?", "APT12 attack vectors?", "Attack vectors of APT12?", "APT12 vectors?", "Vectors of APT12?", "Attack vectors leveraged by APT12?"],
+         "responses": ["FireEye observed APT12 deliver these exploit documents via phishing emails from valid but compromised accounts. Based on past APT12 activity, we expect the threat group to continue to utilize phishing as a malware delivery method."],
+         "context_set": ""
+        },
+        {"tag": "APT12_malware",
+         "patterns": ["What malware have been used by APT12?", "APT12 malware?", "Malware of APT12?", "APT12 associated malware?", "Associated malware of APT12?", "Malware used by APT12?"],
+         "responses": ["RIPTIDE, HIGHTIDE, THREBYTE, WATERSPOUT"],
+         "context_set": ""
+        },
+        {"tag": "APT10_attribution",
+         "patterns": ["Which country employs APT10?", "APT10 country?", "Nationality of APT10?", "APT10 nationality?", "Country of APT10?", "Country of origin of APT10?", "APT10 nation?"],
+         "responses": ["APT10 is a Chinese state-sponsored group"],
+         "context_set": ""
+        },
+        {"tag": "APT10_target",
+         "patterns": ["Which sectors have been targeted by APT10?", "APT10 targets?", "Targets of APT10?", "APT10 victims?", "Victims of APT10?", "Organizations targeted by APT10?"],
+         "responses": ["Construction and engineering, aerospace, and telecom firms, and governments in the United States, Europe, and Japan."],
+         "context_set": ""
+        },
+        {"tag": "APT10_overview",
+         "patterns": ["What is APT10?", "What is advanced persistent threat 10?", "Who is APT10?", "Advanced Persistent Threat 10?", "APT10?"],
+         "responses": ["APT10 is a Chinese cyber espionage group that FireEye has tracked since 2009. They have historically targeted construction and engineering, aerospace, and telecom firms, and governments in the United States, Europe, and Japan. We believe that the targeting of these industries has been in support of Chinese national security goals, including acquiring valuable military and intelligence information as well as the theft of confidential business data to support Chinese corporations."],
+         "context_set": ""
+        },
+        {"tag": "APT10_vector",
+         "patterns": ["What attack vector have been used by APT10?", "APT10 attack vectors?", "Attack vectors of APT10?", "APT10 vectors?", "Vectors of APT10?", "Attack vectors leveraged by APT10?"],
+         "responses": ["This recent APT10 activity has included both traditional spear phishing and access to victim’s networks through managed service providers. (For more information on infection via service providers see M-Trends 2016). APT10 spear phishes have been relatively unsophisticated, leveraging .lnk files within archives, files with double extensions (e.g. [Redacted]_Group_Meeting_Document_20170222_doc_.exe) and in some cases simply identically named decoy documents and malicious launchers within the same archive. In addition to the spear phishes, FireEye Threat Intelligence has observed APT10 accessing victims through global service providers."],
+         "context_set": ""
+        },
+        {"tag": "APT10_malware",
+         "patterns": ["What malware have been used by APT10?", "APT10 malware?", "Malware of APT10?", "APT10 associated malware?", "Associated malware of APT10?", "Malware used by APT10?"],
+         "responses": ["HAYMAKER, SNUGRIDE, BUGJUICE, QUASARRAT"],
+         "context_set": ""
+        },
+        {"tag": "APT3_attribution",
+         "patterns": ["Which country employs APT3?", "APT3 country?", "Nationality of APT3?", "APT3 nationality?", "Country of APT3?", "Country of origin of APT3?", "APT3 nation?"],
+         "responses": ["APT3 is a Chinese state-sponsored group"],
+         "context_set": ""
+        },
+        {"tag": "APT3_target",
+         "patterns": ["Which sectors have been targeted by APT3?", "APT3 targets?", "Targets of APT3?", "APT3 victims?", "Victims of APT3?", "Organizations targeted by APT3?"],
+         "responses": ["Aerospace and Defense, Construction and Engineering, High Tech, Telecommunications, Transportation."],
+         "context_set": ""
+        },
+        {"tag": "APT3_overview",
+         "patterns": ["What is APT3?", "What is advanced persistent threat 3?", "Who is APT3?", "Advanced Persistent Threat 3?", "APT3?"],
+         "responses": ["The China-based threat group FireEye tracks as APT3 is one of the more sophisticated threat groups that FireEye Threat Intelligence tracks, and they have a history of using browser-based exploits as zero-days (e.g., Internet Explorer, Firefox, and Adobe Flash Player). After successfully exploiting a target host, this group will quickly dump credentials, move laterally to additional hosts, and install custom backdoors. APT3’s command and control (CnC) infrastructure is difficult to track, as there is little overlap across campaigns."],
+         "context_set": ""
+        },
+        {"tag": "APT3_vector",
+         "patterns": ["What attack vector have been used by APT3?", "APT3 attack vectors?", "Attack vectors of APT3?", "APT3 vectors?", "Vectors of APT3?", "Attack vectors leveraged by APT3?"],
+         "responses": ["The phishing emails used by APT3 are usually generic in nature, almost appearing to be spam. Attacks have exploited an unpatched vulnerability in the way Adobe Flash Player parses Flash Video (FLV) files. The exploit uses common vector corruption techniques to bypass Address Space Layout Randomization (ASLR), and uses Return-Oriented Programming (ROP) to bypass Data Execution Prevention (DEP). A neat trick to their ROP technique makes it simpler to exploit and will evade some ROP detection techniques. Shellcode is stored in the packed Adobe Flash Player exploit file alongside a key used for its decryption. The payload is xor encoded and hidden inside an image."],
+         "context_set": ""
+        },
+        {"tag": "APT3_malware",
+         "patterns": ["What malware have been used by APT3?", "APT3 malware?", "Malware of APT3?", "APT3 associated malware?", "Associated malware of APT3?", "Malware used by APT3?"],
+         "responses": ["SHOTPUT, COOKIECUTTER, SOGU"],
+         "context_set": ""
+        },
+        {"tag": "APT1_attribution",
+         "patterns": ["Which country employs APT1?", "APT1 country?", "Nationality of APT1?", "APT1 nationality?", "Country of APT1?", "Country of origin of APT1?", "APT1 nation?"],
+         "responses": ["APT1 is a Chinese state-sponsored group"],
+         "context_set": ""
+        },
+        {"tag": "APT1_target",
+         "patterns": ["Which sectors have been targeted by APT1?", "APT1 targets?", "Targets of APT1?", "APT1 victims?", "Victims of APT1?", "Organizations targeted by APT1?"],
+         "responses": ["Information Technology, Aerospace, Public Administration, Satellites and Telecommunications, Scientific Research and Consulting, Energy, Transportation, Construction and Manufacturing, Engineering Services, High-tech Electronics, International Organizations, Legal Services Media, Advertising and Entertainment, Navigation, Chemicals, Financial Services, Food and Agriculture, Healthcare, Metals and Mining, Education."],
+         "context_set": ""
+        },
+        {"tag": "APT1_overview",
+         "patterns": ["What is APT1?", "What is advanced persistent threat 1?", "Who is APT1?", "Advanced Persistent Threat 1?", "APT1?"],
+         "responses": ["APT1 has systematically stolen hundreds of terabytes of data from at least 141 organizations, and has demonstrated the capability and intent to steal from dozens of organizations simultaneously. The group focuses on compromising organizations across a broad range of industries in English-speaking countries. The size of APT1’s infrastructure implies a large organization with at least dozens, but potentially hundreds of human operators."],
+         "context_set": ""
+        },
+        {"tag": "APT1_vector",
+         "patterns": ["What attack vector have been used by APT1?", "APT1 attack vectors?", "Attack vectors of APT1?", "APT1 vectors?", "Vectors of APT1?", "Attack vectors leveraged by APT1?"],
+         "responses": ["The most commonly observed method of initial compromise is spear phishing. The spear phishing emails contain either a malicious attachment or a hyperlink to a malicious file. The subject line and the text in the email body are usually relevant to the recipient. APT1 also creates webmail accounts using real peoples’ names. While APT1 intruders occasionally use publicly available backdoors such as Poison Ivy and Gh0st RAT, the vast majority of the time they use what appear to be their own custom backdoors. Throughout their stay in the network (which could be years), APT1 usually installs new backdoors as they claim more systems in the environment. Then, if one backdoor is discovered and deleted, they still have other backdoors they can use. We usually detect multiple families of APT1 backdoors scattered around a victim network when APT1 has been present for more than a few weeks."],
+         "context_set": ""
+        },
+        {"tag": "APT1_malware",
+         "patterns": ["What malware have been used by APT1?", "APT1 malware?", "Malware of APT1?", "APT1 associated malware?", "Associated malware of APT1?", "Malware used by APT1?"],
+         "responses": ["TROJAN.ECLTYS, BACKDOOR.BARKIOFORK, BACKDOOR.WAKEMINAP, TROJAN.DOWNBOT, BACKDOOR.DALBOT, BACKDOOR.REVIRD, TROJAN.BADNAME, BACKDOOR.WUALESS"],
+         "context_set": ""
+        },
+        {"tag": "APT39_attribution",
+         "patterns": ["Which country employs APT39?", "APT39 country?", "Nationality of APT39?", "APT39 nationality?", "Country of APT39?", "Country of origin of APT39?", "APT39 nation?"],
+         "responses": ["APT39 is an Iranian state-sponsored group"],
+         "context_set": ""
+        },
+        {"tag": "APT39_target",
+         "patterns": ["Which sectors have been targeted by APT39?", "APT39 targets?", "Targets of APT39?", "APT39 victims?", "Victims of APT39?", "Organizations targeted by APT39?"],
+         "responses": ["While APT39's targeting scope is global, its activities are concentrated in the Middle East. APT39 has prioritized the telecommunications sector, with additional targeting of the travel industry and IT firms that support it and the high-tech industry."],
+         "context_set": ""
+        },
+        {"tag": "APT39_overview",
+         "patterns": ["What is APT39?", "What is advanced persistent threat 39?", "Who is APT39?", "Advanced Persistent Threat 39?", "APT39?"],
+         "responses": ["The group's focus on the telecommunications and travel industries suggests intent to perform monitoring, tracking, or surveillance operations against specific individuals, collect proprietary or customer data for commercial or operational purposes that serve strategic requirements related to national priorities, or create additional accesses and vectors to facilitate future campaigns. Government entities targeting suggests a potential secondary intent to collect geopolitical data that may benefit nation-state decision making."],
+         "context_set": ""
+        },
+        {"tag": "APT39_vector",
+         "patterns": ["What attack vector have been used by APT39?", "APT39 attack vectors?", "Attack vectors of APT39?", "APT39 vectors?", "Vectors of APT39?", "Attack vectors leveraged by APT39?"],
+         "responses": ["For initial compromise FireEye Intelligence has observed APT39 leverage spearphishing with malicious attachments and/or hyperlinks typically resulting in a POWBAT infection. In some cases previously compromised email accounts have also been leveraged, likely to abuse inherent trusts and increase the chances of a successful attack. APT39 frequently registers and leverages domains that masquerade as legitimate web services and organizations that are relevant to the intended target. Furthermore, this group has routinely identified and exploited vulnerable web servers of targeted organizations to install web shells, such as ANTAK and ASPXSPY, and used stolen legitimate credentials to compromise externally facing Outlook Web Access (OWA) resources. We have not observed APT39 exploit vulnerabilities."],
+         "context_set": ""
+        },
+        {"tag": "APT39_malware",
+         "patterns": ["What malware have been used by APT39?", "APT39 malware?", "Malware of APT39?", "APT39 associated malware?", "Associated malware of APT39?", "Malware used by APT39?"],
+         "responses": ["The group primarily leverages the SEAWEED and CACHEMONEY backdoors along with a specific variant of the POWBAT backdoor."],
+         "context_set": ""
+        },
+        {"tag": "APT34_attribution",
+         "patterns": ["Which country employs APT34?", "APT34 country?", "Nationality of APT34?", "APT34 nationality?", "Country of APT34?", "Country of origin of APT34?", "APT34 nation?"],
+         "responses": ["APT34 is an Iranian state-sponsored group"],
+         "context_set": ""
+        },
+        {"tag": "APT34_target",
+         "patterns": ["Which sectors have been targeted by APT34?", "APT34 targets?", "Targets of APT34?", "APT34 victims?", "Victims of APT34?", "Organizations targeted by APT34?"],
+         "responses": ["This threat group has conducted broad targeting across a variety of industries, including financial, government, energy, chemical, and telecommunications, and has largely focused its operations within the Middle East."],
+         "context_set": ""
+        },
+        {"tag": "APT34_overview",
+         "patterns": ["What is APT34?", "What is advanced persistent threat 34?", "Who is APT34?", "Advanced Persistent Threat 34?", "APT34?"],
+         "responses": ["We believe APT34 is involved in a long-term cyber espionage operation largely focused on reconnaissance efforts to benefit Iranian nation-state interests and has been operational since at least 2014. We assess that APT34 works on behalf of the Iranian government based on infrastructure details that contain references to Iran, use of Iranian infrastructure, and targeting that aligns with nation-state interests."],
+         "context_set": ""
+        },
+        {"tag": "APT34_vector",
+         "patterns": ["What attack vector have been used by APT34?", "APT34 attack vectors?", "Attack vectors of APT34?", "APT34 vectors?", "Vectors of APT34?", "Attack vectors leveraged by APT34?"],
+         "responses": ["In its latest campaign, APT34 leveraged the recent Microsoft Office vulnerability CVE-2017-11882 to deploy POWRUNER and BONDUPDATER."],
+         "context_set": ""
+        },
+        {"tag": "APT34_malware",
+         "patterns": ["What malware have been used by APT34?", "APT34 malware?", "Malware of APT34?", "APT34 associated malware?", "Associated malware of APT34?", "Malware used by APT34?"],
+         "responses": ["POWBAT, POWRUNER, BONDUPDATER."],
+         "context_set": ""
+        },
+        {"tag": "APT33_attribution",
+         "patterns": ["Which country employs APT33?", "APT33 country?", "Nationality of APT33?", "APT33 nationality?", "Country of APT33?", "Country of origin of APT33?", "APT33 nation?"],
+         "responses": ["APT33 is an Iranian state-sponsored group"],
+         "context_set": ""
+        },
+        {"tag": "APT33_target",
+         "patterns": ["Which sectors have been targeted by APT33?", "APT33 targets?", "Targets of APT33?", "APT33 victims?", "Victims of APT33?", "Organizations targeted by APT33?"],
+         "responses": ["Aerospace, energy."],
+         "context_set": ""
+        },
+        {"tag": "APT33_overview",
+         "patterns": ["What is APT33?", "What is advanced persistent threat 33?", "Who is APT33?", "Advanced Persistent Threat 33?", "APT33?"],
+         "responses": ["APT33 has targeted organizations, spanning multiple industries, headquartered in the U.S., Saudi Arabia and South Korea. APT33 has shown particular interest in organizations in the aviation sector involved in both military and commercial capacities, as well as organizations in the energy sector with ties to petrochemical production."],
+         "context_set": ""
+        },
+        {"tag": "APT33_vector",
+         "patterns": ["What attack vector have been used by APT33?", "APT33 attack vectors?", "Attack vectors of APT33?", "APT33 vectors?", "Vectors of APT33?", "Attack vectors leveraged by APT33?"],
+         "responses": ["APT33 sent spear-phishing emails to employees whose jobs related to the aviation industry. These emails included recruitment themed lures and contained links to malicious HTML application (.hta) files. The .hta files contained job descriptions and links to legitimate job postings on popular employment websites that would be relevant to the targeted individuals."],
+         "context_set": ""
+        },
+        {"tag": "APT33_malware",
+         "patterns": ["What malware have been used by APT33?", "APT33 malware?", "Malware of APT33?", "APT33 associated malware?", "Associated malware of APT33?", "Malware used by APT33?"],
+         "responses": ["SHAPESHIFT, DROPSHOT, TURNEDUP, NANOCORE, NETWIRE, ALFA Shell."],
+         "context_set": ""
+        },
+        {"tag": "APT38_attribution",
+         "patterns": ["Which country employs APT38?", "APT38 country?", "Nationality of APT38?", "APT38 nationality?", "Country of APT38?", "Country of origin of APT38?", "APT38 nation?"],
+         "responses": ["APT38 is a North Korean (Democratic People’s Republic of Korea, DPRK) state-sponsored group"],
+         "context_set": ""
+        },
+        {"tag": "APT38_target",
+         "patterns": ["Which sectors have been targeted by APT38?", "APT38 targets?", "Targets of APT38?", "APT38 victims?", "Victims of APT38?", "Organizations targeted by APT38?"],
+         "responses": ["Financial institutions world-wide."],
+         "context_set": ""
+        },
+        {"tag": "APT38_overview",
+         "patterns": ["What is APT38?", "What is advanced persistent threat 38?", "Who is APT38?", "Advanced Persistent Threat 38?", "APT38?"],
+         "responses": ["APT38 is responsible for conducting the largest observed cyber heists. Although APT38 shares malware development resources and North Korean state sponsorship with a group referred to by the security community as 'Lazarus', we believe that APT38’s financial motivation, unique toolset, and tactics, techniques, and procedures (TTPs) are distinct enough for them to be tracked separately from other North Korean cyber activity."],
+         "context_set": ""
+        },
+        {"tag": "APT38_vector",
+         "patterns": ["What attack vector have been used by APT38?", "APT38 attack vectors?", "Attack vectors of APT38?", "APT38 vectors?", "Vectors of APT38?", "Attack vectors leveraged by APT38?"],
+         "responses": ["APT38 has conducted operations in over 16 organizations in at least 11 countries. This group is careful, calculated, and has demonstrated a desire to maintain access to victim environments for as long as necessary to understand the network layout, required permissions, and system technologies to achieve its goals. APT38 is unique in that they are not afraid to aggressively destroy evidence or victim networks as part of their operations."],
+         "context_set": ""
+        },
+        {"tag": "APT38_malware",
+         "patterns": ["What malware have been used by APT38?", "APT38 malware?", "Malware of APT38?", "APT38 associated malware?", "Associated malware of APT38?", "Malware used by APT38?"],
+         "responses": ["This large and prolific group uses a variety of custom malware families, including backdoors, tunnelers, dataminers, and destructive malware to steal millions of dollars from financial institutions and render victim networks inoperable."],
+         "context_set": ""
+        },
+        {"tag": "APT37_attribution",
+         "patterns": ["Which country employs APT37?", "APT37 country?", "Nationality of APT37?", "APT37 nationality?", "Country of APT37?", "Country of origin of APT37?", "APT37 nation?"],
+         "responses": ["APT37 is a North Korean (Democratic People’s Republic of Korea, DPRK) state-sponsored group"],
+         "context_set": ""
+        },
+        {"tag": "APT37_target",
+         "patterns": ["Which sectors have been targeted by APT37?", "APT37 targets?", "Targets of APT37?", "APT37 victims?", "Victims of APT37?", "Organizations targeted by APT37?"],
+         "responses": ["Primarily South Korea – though also Japan, Vietnam and the Middle East – in various industry verticals, including chemicals, electronics, manufacturing, aerospace, automotive, and healthcare."],
+         "context_set": ""
+        },
+        {"tag": "APT37_overview",
+         "patterns": ["What is APT37?", "What is advanced persistent threat 37?", "Who is APT37?", "Advanced Persistent Threat 37?", "APT37?"],
+         "responses": ["APT37’s operations are expanding in scope and sophistication, with a toolset that includes access to zero-day vulnerabilities and wiper malware. We assess with high confidence that this activity is carried out on behalf of the North Korean government given malware development artifacts and targeting that aligns with North Korean state interests. FireEye Threat Intelligence believes that APT37 is aligned with the activity publicly reported as Scarcruft and Group123."],
+         "context_set": ""
+        },
+        {"tag": "APT37_vector",
+         "patterns": ["What attack vector have been used by APT37?", "APT37 attack vectors?", "Attack vectors of APT37?", "APT37 vectors?", "Vectors of APT37?", "Attack vectors leveraged by APT37?"],
+         "responses": ["Social engineering tactics tailored specifically to desired targets, strategic web compromises typical of targeted cyber espionage operations, and the use of torrent file-sharing sites to distribute malware more indiscriminately. Frequent exploitation of vulnerabilities in Hangul Word Processor (HWP), as well as Adobe Flash. The group has demonstrated access to zero-day vulnerabilities (CVE-2018-0802), and the ability to incorporate them into operations."],
+         "context_set": ""
+        },
+        {"tag": "APT37_malware",
+         "patterns": ["What malware have been used by APT37?", "APT37 malware?", "Malware of APT37?", "APT37 associated malware?", "Associated malware of APT37?", "Malware used by APT37?"],
+         "responses": ["A diverse suite of malware for initial intrusion and exfiltration. Along with custom malware used for espionage purposes, APT37 also has access to destructive malware."],
+         "context_set": ""
+        },
+        {"tag": "APT29_attribution",
+         "patterns": ["Which country employs APT29?", "APT29 country?", "Nationality of APT29?", "APT29 nationality?", "Country of APT29?", "Country of origin of APT29?", "APT29 nation?"],
+         "responses": ["APT29 is a Russian state-sponsored group"],
+         "context_set": ""
+        },
+        {"tag": "APT29_target",
+         "patterns": ["Which sectors have been targeted by APT29?", "APT29 targets?", "Targets of APT29?", "APT29 victims?", "Victims of APT29?", "Organizations targeted by APT29?"],
+         "responses": ["Western European governments, foreign policy groups and other similar organizations."],
+         "context_set": ""
+        },
+        {"tag": "APT29_overview",
+         "patterns": ["What is APT29?", "What is advanced persistent threat 29?", "Who is APT29?", "Advanced Persistent Threat 29?", "APT29?"],
+         "responses": ["APT29 is an adaptive and disciplined threat group that hides its activity on a victim’s network, communicating infrequently and in a way that closely resembles legitimate traffic. By using legitimate popular web services, the group can also take advantage of encrypted SSL connections, making detection even more difficult. APT29 is one of the most evolved and capable threat groups. It deploys new backdoors to fix its own bugs and add features. It monitors network defender activity to maintain control over systems. APT29 uses only compromised servers for CnC communication. It counters attempts to remediate attacks. It also maintains a fast development cycle for its malware, quickly altering tools to hinder detection."],
+         "context_set": ""
+        },
+        {"tag": "APT29_vector",
+         "patterns": ["What attack vector have been used by APT29?", "APT29 attack vectors?", "Attack vectors of APT29?", "APT29 vectors?", "Vectors of APT29?", "Attack vectors leveraged by APT29?"],
+         "responses": ["APT29 has used social media sites such as Twitter or GitHub, as well as cloud storage services, to relay commands and extract data from compromised networks. The group relays commands via images containing hidden and encrypted data. Information is extracted from a compromised network and files are uploaded to cloud storage services."],
+         "context_set": ""
+        },
+        {"tag": "APT29_malware",
+         "patterns": ["What malware have been used by APT29?", "APT29 malware?", "Malware of APT29?", "APT29 associated malware?", "Associated malware of APT29?", "Malware used by APT29?"],
+         "responses": ["HAMMERTOSS, TDISCOVER, UPLOADER."],
+         "context_set": ""
+        },
+        {"tag": "APT28_attribution",
+         "patterns": ["Which country employs APT28?", "APT28 country?", "Nationality of APT28?", "APT28 nationality?", "Country of APT28?", "Country of origin of APT28?", "APT28 nation?"],
+         "responses": ["APT28 is a Russian state-sponsored group"],
+         "context_set": ""
+        },
+        {"tag": "APT28_target",
+         "patterns": ["Which sectors have been targeted by APT28?", "APT28 targets?", "Targets of APT28?", "APT28 victims?", "Victims of APT28?", "Organizations targeted by APT28?"],
+         "responses": ["The Caucasus, particularly Georgia, eastern European countries and militaries, North Atlantic Treaty Organization (NATO) and other European security organizations and defense firms."],
+         "context_set": ""
+        },
+        {"tag": "APT28_overview",
+         "patterns": ["What is APT28?", "What is advanced persistent threat 28?", "Who is APT28?", "Advanced Persistent Threat 28?", "APT28?"],
+         "responses": ["APT28 is a skilled team of developers and operators collecting intelligence on defense and geopolitical issues—intelligence that would be useful only to a government. This APT group compiles malware samples with Russian language settings during working hours (8 a.m. to 6 p.m.), consistent with the time zone of Russia’s major cities, including Moscow and St. Petersburg. This suggests that APT28 receives direct ongoing financial and other resources from a well-established organization, most likely the Russian government."],
+         "context_set": ""
+        },
+        {"tag": "APT28_vector",
+         "patterns": ["What attack vector have been used by APT28?", "APT28 attack vectors?", "Attack vectors of APT28?", "APT28 vectors?", "Vectors of APT28?", "Attack vectors leveraged by APT28?"],
+         "responses": ["Tools commonly used by APT28 include the SOURFACE downloader, its second-stage backdoor EVILTOSS and a modular family of implants dubbed CHOPSTICK. APT28 has employed RSA encryption to protect files and stolen information moved from the victim’s network to the controller. It has also made incremental and systematic changes to the SOURFACE downloader and its surrounding ecosystem since 2007, indicating a long-standing and dedicated development effort."],
+         "context_set": ""
+        },
+        {"tag": "APT28_malware",
+         "patterns": ["What malware have been used by APT28?", "APT28 malware?", "Malware of APT28?", "APT28 associated malware?", "Associated malware of APT28?", "Malware used by APT28?"],
+         "responses": ["CHOPSTICK, SOURFACE."],
+         "context_set": ""
+        },
+        {"tag": "APT32_attribution",
+         "patterns": ["Which country employs APT32?", "APT32 country?", "Nationality of APT32?", "APT32 nationality?", "Country of APT32?", "Country of origin of APT32?", "APT32 nation?"],
+         "responses": ["APT32 is a Vietnamese state-sponsored group"],
+         "context_set": ""
+        },
+        {"tag": "APT32_target",
+         "patterns": ["Which sectors have been targeted by APT32?", "APT32 targets?", "Targets of APT32?", "APT32 victims?", "Victims of APT32?", "Organizations targeted by APT32?"],
+         "responses": ["Foreign companies investing in Vietnam’s manufacturing, consumer products, consulting and hospitality sectors."],
+         "context_set": ""
+        },
+        {"tag": "APT32_overview",
+         "patterns": ["What is APT32?", "What is advanced persistent threat 32?", "Who is APT32?", "Advanced Persistent Threat 32?", "APT32?"],
+         "responses": ["Recent activity targeting private interests in Vietnam suggests that APT32 poses a threat to companies doing business, manufacturing or preparing to invest in the country. While the specific motivation for this activity remains opaque, it could ultimately erode the competitive advantage of targeted organizations."],
+         "context_set": ""
+        },
+        {"tag": "APT32_vector",
+         "patterns": ["What attack vector have been used by APT32?", "APT32 attack vectors?", "Attack vectors of APT32?", "APT32 vectors?", "Vectors of APT32?", "Attack vectors leveraged by APT32?"],
+         "responses": ["APT32 actors leverage ActiveMime files that employ social engineering methods to entice the victim into enabling macros. Upon execution, the initialized file typically downloads multiple malicious payloads from a remote server. APT32 actors delivers the malicious attachments via spear phishing emails. Evidence has shown that some may have been sent via Gmail."],
+         "context_set": ""
+        },
+        {"tag": "APT32_malware",
+         "patterns": ["What malware have been used by APT32?", "APT32 malware?", "Malware of APT32?", "APT32 associated malware?", "Associated malware of APT32?", "Malware used by APT32?"],
+         "responses": ["SOUNDBITE, WINDSHIELD, PHOREAL, BEACON, KOMPROGO."],
+         "context_set": ""
+        },
+        {"tag": "APT5_attribution",
+         "patterns": ["Which country employs APT5?", "APT5 country?", "Nationality of APT5?", "APT5 nationality?", "Country of APT5?", "Country of origin of APT5?", "APT5 nation?"],
+         "responses": ["The country affiliated with APT5 has not been disclosed"],
+         "context_set": ""
+        },
+        {"tag": "APT5_target",
+         "patterns": ["Which sectors have been targeted by APT5?", "APT5 targets?", "Targets of APT5?", "APT5 victims?", "Victims of APT5?", "Organizations targeted by APT5?"],
+         "responses": ["Regional Telecommunication Providers, Asia-Based Employees of Global Telecommunications, and Tech Firms, High-Tech Manufacturing, Military Application Technology."],
+         "context_set": ""
+        },
+        {"tag": "APT5_overview",
+         "patterns": ["What is APT5?", "What is advanced persistent threat 5?", "Who is APT5?", "Advanced Persistent Threat 5?", "APT5?"],
+         "responses": ["APT5 has been active since at least 2007. APT5 has targeted or breached organizations across multiple industries, but its focus appears to be on telecommunications and technology companies, especially information about satellite communications."],
+         "context_set": ""
+        },
+        {"tag": "APT5_vector",
+         "patterns": ["What attack vector have been used by APT5?", "APT5 attack vectors?", "Attack vectors of APT5?", "APT5 vectors?", "Vectors of APT5?", "Attack vectors leveraged by APT5?"],
+         "responses": ["It appears to be a large threat group that consists of several subgroups, often with distinct tactics and infrastructure. The group uses malware with keylogging capabilities to specifically target telecommunication companies' corporate networks, employees and executives."],
+         "context_set": ""
+        },
+        {"tag": "APT5_malware",
+         "patterns": ["What malware have been used by APT5?", "APT5 malware?", "Malware of APT5?", "APT5 associated malware?", "Associated malware of APT5?", "Malware used by APT5?"],
+         "responses": ["LEOUNCIA."],
+         "context_set": ""
+        }
+   ]
+}
