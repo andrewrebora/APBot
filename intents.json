@@ -1,6 +1,6 @@
 {"intents": [
         {"tag": "greeting",
-         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Whats up"],
+         "patterns": ["Hi", "How are you?", "Is anyone there?", "Hello", "Good day", "Whats up?"],
          "responses": ["Hello", "Welcome", "What do you want to know?"],
          "context_set": ""
         },
@@ -19,12 +19,17 @@
          "responses": ["I was created on May 3, 2020"],
          "context_set": ""
         },
+         {"tag": "exit",
+         "patterns": ["I want to exit", "Go away", "I want to close you", "Let me out"],
+         "responses": ["Run 'quit'"],
+         "context_set": ""
+        },
         {"tag": "name",
          "patterns": ["What is your name?", "What should I call you?", "Whats your name?", "Who are you?", "Define yourself"],
          "responses": ["You can call me APBot.", "I am APBot", "I am APBot, short of Advanced Persistent Bot"],
          "context_set": ""
         },
-          {"tag": "purpose",
+        {"tag": "purpose",
          "patterns": ["What is your purpose?", "What do you do?", "How can you help me?", "Why do you exist?", "Why are you here?"],
          "responses": ["I can answer your questions about advanced persistent threat groups."],
          "context_set": ""
@@ -59,54 +64,70 @@
          "responses": ["CRACKSHOT, GEARSHIFT, HIGHNOON, JUMPALL, POISONPLUG, HOTCHAI, LATELUNCH, LIFEBOAT, LOWKEY, NJRAT, PACMAN, PHOTO, POTROAST, ROCKBOOT, SAGEHIRE, SWEETCANDLE, SOGU, TERA, TIDYELF, WIDETONE, WINTERLOVE, XDoor, Xmrig, ZxShell"],
          "context_set": ""
         },
+
+        {"tag": "APT41_report",
+         "patterns": ["Where can I find information about APT41?", "Where can I find info about APT41?", "Where can I find material about APT41?", "Where can I find blogs about APT41?","Where can I find more webinars about APT41?","APT42 material?", "APT41 reports?", "APT41 blog?", "APT41 webinar?"],
+         "responses": ["https://content.fireeye.com/apt-41/rpt-apt41/, https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html, https://www.brighttalk.com/webcast/7451/366611?utm_source=fireeye&utm_medium=webinar-page"],
+         "context_set": ""
+        },
         {"tag": "APT40_attribution",
-          "patterns": ["Which country employs APT40?", "APT40 country?", "Nationality of APT40?", "APT40 nationality?", "Country of APT40?", "Country of origin of APT40?", "APT40 nation?"],
-          "responses": ["APT40 is a Chinese state-sponsored group"],
-          "context_set": ""
+         "patterns": ["Which country employs APT40?", "APT40 country?", "Nationality of APT40?", "APT40 nationality?", "Country of APT40?", "Country of origin of APT40?", "APT40 nation?"],
+         "responses": ["APT40 is a Chinese state-sponsored group"],
+         "context_set": ""
         },
         {"tag": "APT40_target",
-          "patterns": ["Which sectors have been targeted by APT40?", "APT40 targets?", "Targets of APT40?", "APT40 victims?", "Victims of APT40?", "Organizations targeted by APT40?"],
-          "responses": ["APT40 is a Chinese cyber espionage group that typically targets countries strategically important to the Belt and Road Initiative. Although the group targets global organizations — especially those with a focus on engineering and defense — it also historically conducted campaigns against regional entities in areas such as Southeast Asia. Since at least January 2013, the group has conducted campaigns against a range of verticals including maritime targets, defense, aviation, chemicals, research/education, government, and technology organizations."],
-          "context_set": ""
+         "patterns": ["Which sectors have been targeted by APT40?", "APT40 targets?", "Targets of APT40?", "APT40 victims?", "Victims of APT40?", "Organizations targeted by APT40?"],
+         "responses": ["APT40 is a Chinese cyber espionage group that typically targets countries strategically important to the Belt and Road Initiative. Although the group targets global organizations — especially those with a focus on engineering and defense — it also historically conducted campaigns against regional entities in areas such as Southeast Asia. Since at least January 2013, the group has conducted campaigns against a range of verticals including maritime targets, defense, aviation, chemicals, research/education, government, and technology organizations."],
+         "context_set": ""
         },
         {"tag": "APT40_overview",
-          "patterns": ["What is APT40?", "What is advanced persistent threat 40?", "Who is APT40?", "Advanced Persistent Threat 40?", "APT40?"],
-          "responses": ["FireEye Intelligence believes that APT40's operations are a cyber counterpart to China's efforts to modernize its naval capabilities; this is also manifested in targeting wide-scale research projects at universities and obtaining designs for marine equipment and vehicles. The group's operations tend to target government-sponsored projects and take large amounts of information specific to such projects, including proposals, meetings, financial data, shipping information, plans and drawings, and raw data."],
-          "context_set": ""
+         "patterns": ["What is APT40?", "What is advanced persistent threat 40?", "Who is APT40?", "Advanced Persistent Threat 40?", "APT40?"],
+         "responses": ["FireEye Intelligence believes that APT40's operations are a cyber counterpart to China's efforts to modernize its naval capabilities; this is also manifested in targeting wide-scale research projects at universities and obtaining designs for marine equipment and vehicles. The group's operations tend to target government-sponsored projects and take large amounts of information specific to such projects, including proposals, meetings, financial data, shipping information, plans and drawings, and raw data."],
+         "context_set": ""
         },
         {"tag": "APT40_vector",
-          "patterns": ["What attack vector have been used by APT40?", "APT40 attack vectors?", "Attack vectors of APT40?", "APT40 vectors?", "Vectors of APT40?", "Attack vectors leveraged by APT40?"],
-          "responses": ["APT40 typically poses as a prominent individual who is probably of interest to a target to send spear-phishing emails. This includes pretending to be a journalist, an individual from a trade publication, or someone from a relevant military organization or non-governmental organization (NGO). In some instances, the group has leveraged previously compromised email addresses to send spear-phishing emails."],
-          "context_set": ""
+         "patterns": ["What attack vector have been used by APT40?", "APT40 attack vectors?", "Attack vectors of APT40?", "APT40 vectors?", "Vectors of APT40?", "Attack vectors leveraged by APT40?"],
+         "responses": ["APT40 typically poses as a prominent individual who is probably of interest to a target to send spear-phishing emails. This includes pretending to be a journalist, an individual from a trade publication, or someone from a relevant military organization or non-governmental organization (NGO). In some instances, the group has leveraged previously compromised email addresses to send spear-phishing emails."],
+         "context_set": ""
         },
         {"tag": "APT40_malware",
-          "patterns": ["What malware have been used by APT40?", "APT40 malware?", "Malware of APT40?", "APT40 associated malware?", "Associated malware of APT40?", "Malware used by APT40?"],
-          "responses": ["AIRBREAK, BADFLICK, PHOTO, HOMEFRY, LUNCHMONEY, MURKYTOP, China Chopper, Beacon, BLACKCOFFEE, CVE-2017-11882, Derusbi, RoyalRoad RTF Weaponizer"],
-          "context_set": ""
+         "patterns": ["What malware have been used by APT40?", "APT40 malware?", "Malware of APT40?", "APT40 associated malware?", "Associated malware of APT40?", "Malware used by APT40?"],
+         "responses": ["AIRBREAK, BADFLICK, PHOTO, HOMEFRY, LUNCHMONEY, MURKYTOP, China Chopper, Beacon, BLACKCOFFEE, CVE-2017-11882, Derusbi, RoyalRoad RTF Weaponizer"],
+         "context_set": ""
         },
+        {"tag": "APT40_report",
+         "patterns": ["Where can I find information about APT40?", "Where can I find info about APT40?", "Where can I find material about APT40?", "Where can I find blogs about APT40?","Where can I find more webinars about APT40?","APT42 material?", "APT40 reports?", "APT40 blog?", "APT40 webinar?"],
+         "responses": ["https://www.fireeye.com/blog/threat-research/2019/03/apt40-examining-a-china-nexus-espionage-actor.html"],
+         "context_set": ""
+       },
         {"tag": "APT30_attribution",
-          "patterns": ["Which country employs APT30?", "APT30 country?", "Nationality of APT30?", "APT30 nationality?", "Country of APT30?", "Country of origin of APT30?", "APT30 nation?"],
-          "responses": ["APT30 is a Chinese state-sponsored group"],
-          "context_set": ""
+         "patterns": ["Which country employs APT30?", "APT30 country?", "Nationality of APT30?", "APT30 nationality?", "Country of APT30?", "Country of origin of APT30?", "APT30 nation?"],
+         "responses": ["APT30 is a Chinese state-sponsored group"],
+         "context_set": ""
         },
         {"tag": "APT30_target",
-          "patterns": ["Which sectors have been targeted by APT30?", "APT30 targets?", "Targets of APT30?", "APT30 victims?", "Victims of APT30?", "Organizations targeted by APT30?"],
-          "responses": ["Members of the Association of Southeast Asian Nations (ASEAN)."],
-          "context_set": ""
+         "patterns": ["Which sectors have been targeted by APT30?", "APT30 targets?", "Targets of APT30?", "APT30 victims?", "Victims of APT30?", "Organizations targeted by APT30?"],
+         "responses": ["Members of the Association of Southeast Asian Nations (ASEAN)."],
+         "context_set": ""
         },
         {"tag": "APT30_overview",
-          "patterns": ["What is APT30?", "What is advanced persistent threat 30?", "Who is APT30?", "Advanced Persistent Threat 30?", "APT30?"],
-          "responses": ["APT30 is noted not only for sustained activity over a long period of time but also for successfully modifying and adapting source code to maintain the same tools, tactics and infrastructure since at least 2005. Evidence shows that the group prioritizes targets, most likely works in shifts in a collaborative environment and builds malware from a coherent development plan. The group has had the capability to infect air-gapped networks since 2005."],
-          "context_set": ""
+         "patterns": ["What is APT30?", "What is advanced persistent threat 30?", "Who is APT30?", "Advanced Persistent Threat 30?", "APT30?"],
+         "responses": ["APT30 is noted not only for sustained activity over a long period of time but also for successfully modifying and adapting source code to maintain the same tools, tactics and infrastructure since at least 2005. Evidence shows that the group prioritizes targets, most likely works in shifts in a collaborative environment and builds malware from a coherent development plan. The group has had the capability to infect air-gapped networks since 2005."],
+         "context_set": ""
         },
         {"tag": "APT30_vector",
-          "patterns": ["What attack vector have been used by APT30?", "APT30 attack vectors?", "Attack vectors of APT30?", "APT30 vectors?", "Vectors of APT30?", "Attack vectors leveraged by APT30?"],
-          "responses": ["APT30 uses a suite of tools that includes downloaders, backdoors, a central controller and several components designed to infect removable drives and cross air-gapped networks to steal data. APT30 frequently registers its own DNS domains for malware CnC activities."],
-          "context_set": ""
+         "patterns": ["What attack vector have been used by APT30?", "APT30 attack vectors?", "Attack vectors of APT30?", "APT30 vectors?", "Vectors of APT30?", "Attack vectors leveraged by APT30?"],
+         "responses": ["APT30 uses a suite of tools that includes downloaders, backdoors, a central controller and several components designed to infect removable drives and cross air-gapped networks to steal data. APT30 frequently registers its own DNS domains for malware CnC activities."],
+         "context_set": ""
         },
         {"tag": "APT30_malware",
          "patterns": ["What malware have been used by APT30?", "APT30 malware?", "Malware of APT30?", "APT30 associated malware?", "Associated malware of APT30?", "Malware used by APT30?"],
          "responses": ["SHIPSHAPE, SPACESHIP, FLASHFLOOD"],
+         "context_set": ""
+        },
+        {"tag": "APT30_report",
+         "patterns": ["Where can I find information about APT30?", "Where can I find info about APT30?", "Where can I find material about APT30?", "Where can I find blogs about APT30?","Where can I find more webinars about APT30?","APT42 material?", "APT30 reports?", "APT30 blog?", "APT30 webinar?"],
+         "responses": ["https://www.fireeye.com/blog/executive-perspective/2015/04/apt30_and_lessonsfo.html, https://www.fireeye.com/current-threats/apt-groups/rpt-apt30.html"],
          "context_set": ""
         },
         {"tag": "APT19_attribution",
@@ -134,6 +155,11 @@
          "responses": ["BEACON, COBALTSTRIKE"],
          "context_set": ""
         },
+        {"tag": "APT19_report",
+         "patterns": ["Where can I find information about APT19?", "Where can I find info about APT19?", "Where can I find material about APT19?", "Where can I find blogs about APT19?","Where can I find more webinars about APT19?","APT42 material?", "APT19 reports?", "APT19 blog?", "APT19 webinar?"],
+         "responses": ["I am not sure, try doing a research on Google"],
+         "context_set": ""
+        },
         {"tag": "APT18_attribution",
          "patterns": ["Which country employs APT18?", "APT18 country?", "Nationality of APT18?", "APT18 nationality?", "Country of APT18?", "Country of origin of APT18?", "APT18 nation?"],
          "responses": ["APT18 is a Chinese state-sponsored group"],
@@ -157,6 +183,11 @@
         {"tag": "APT18_malware",
          "patterns": ["What malware have been used by APT18?", "APT18 malware?", "Malware of APT18?", "APT18 associated malware?", "Associated malware of APT18?", "Malware used by APT18?"],
          "responses": ["Gh0st RAT"],
+         "context_set": ""
+        },
+        {"tag": "APT18_report",
+         "patterns": ["Where can I find information about APT18?", "Where can I find info about APT18?", "Where can I find material about APT18?", "Where can I find blogs about APT18?","Where can I find more webinars about APT18?","APT42 material?", "APT18 reports?", "APT18 blog?", "APT18 webinar?"],
+         "responses": ["https://www.fireeye.com/blog/threat-research/2015/07/demonstrating_hustle.html, https://www.fireeye.com/solutions/healthcare.html"],
          "context_set": ""
         },
         {"tag": "APT17_attribution",
@@ -184,6 +215,11 @@
          "responses": ["BLACKCOFFEE"],
          "context_set": ""
         },
+        {"tag": "APT17_report",
+         "patterns": ["Where can I find information about APT17?", "Where can I find info about APT17?", "Where can I find material about APT17?", "Where can I find blogs about APT17?","Where can I find more webinars about APT17?","APT42 material?", "APT17 reports?", "APT17 blog?", "APT17 webinar?"],
+         "responses": ["https://www.fireeye.com/current-threats/apt-groups/rpt-apt17.html"],
+         "context_set": ""
+        },
         {"tag": "APT16_attribution",
          "patterns": ["Which country employs APT16?", "APT16 country?", "Nationality of APT16?", "APT16 nationality?", "Country of APT16?", "Country of origin of APT16?", "APT16 nation?"],
          "responses": ["APT16 is a Chinese state-sponsored group"],
@@ -207,6 +243,11 @@
         {"tag": "APT16_malware",
          "patterns": ["What malware have been used by APT16?", "APT16 malware?", "Malware of APT16?", "APT16 associated malware?", "Associated malware of APT16?", "Malware used by APT16?"],
          "responses": ["IRONHALO, ELMER"],
+         "context_set": ""
+        },
+        {"tag": "APT16_report",
+         "patterns": ["Where can I find information about APT16?", "Where can I find info about APT16?", "Where can I find material about APT16?", "Where can I find blogs about APT16?","Where can I find more webinars about APT16?","APT42 material?", "APT16 reports?", "APT16 blog?", "APT16 webinar?"],
+         "responses": ["I am not sure, try doing a research on Google"],
          "context_set": ""
         },
         {"tag": "APT12_attribution",
@@ -234,6 +275,11 @@
          "responses": ["RIPTIDE, HIGHTIDE, THREBYTE, WATERSPOUT"],
          "context_set": ""
         },
+        {"tag": "APT12_report",
+         "patterns": ["Where can I find information about APT12?", "Where can I find info about APT12?", "Where can I find material about APT12?", "Where can I find blogs about APT12?","Where can I find more webinars about APT12?","APT42 material?", "APT12 reports?", "APT12 blog?", "APT12 webinar?"],
+         "responses": ["https://www.fireeye.com/current-threats/annual-threat-report/mtrends/rpt-2014-mtrends.html, https://www.fireeye.com/blog/threat-research/2014/09/darwins-favorite-apt-group-2.html"],
+         "context_set": ""
+        },
         {"tag": "APT10_attribution",
          "patterns": ["Which country employs APT10?", "APT10 country?", "Nationality of APT10?", "APT10 nationality?", "Country of APT10?", "Country of origin of APT10?", "APT10 nation?"],
          "responses": ["APT10 is a Chinese state-sponsored group"],
@@ -257,6 +303,11 @@
         {"tag": "APT10_malware",
          "patterns": ["What malware have been used by APT10?", "APT10 malware?", "Malware of APT10?", "APT10 associated malware?", "Associated malware of APT10?", "Malware used by APT10?"],
          "responses": ["HAYMAKER, SNUGRIDE, BUGJUICE, QUASARRAT"],
+         "context_set": ""
+        },
+        {"tag": "APT10_report",
+         "patterns": ["Where can I find information about APT10?", "Where can I find info about APT10?", "Where can I find material about APT10?", "Where can I find blogs about APT10?","Where can I find more webinars about APT10?","APT42 material?", "APT10 reports?", "APT10 blog?", "APT10 webinar?"],
+         "responses": ["https://www.fireeye.com/blog/threat-research/2018/09/apt10-targeting-japanese-corporations-using-updated-ttps.html, https://www.fireeye.com/blog/threat-research/2017/04/apt10_menupass_grou.html"],
          "context_set": ""
         },
         {"tag": "APT3_attribution",
@@ -284,6 +335,11 @@
          "responses": ["SHOTPUT, COOKIECUTTER, SOGU"],
          "context_set": ""
         },
+        {"tag": "APT3_report",
+         "patterns": ["Where can I find information about APT3?", "Where can I find info about APT3?", "Where can I find material about APT3?", "Where can I find blogs about APT3?","Where can I find more webinars about APT3?","APT42 material?", "APT3 reports?", "APT3 blog?", "APT3 webinar?"],
+         "responses": ["https://www.fireeye.com/blog/threat-research/2015/07/demonstrating_hustle.html, https://www.fireeye.com/blog/threat-research/2014/04/new-zero-day-exploit-targeting-internet-explorer-versions-9-through-11-identified-in-targeted-attacks.html, https://www.fireeye.com/blog/threat-research/2014/11/operation_doubletap.html, https://www.fireeye.com/blog/threat-research/2015/06/operation-clandestine-wolf-adobe-flash-zero-day.html"],
+         "context_set": ""
+        },
         {"tag": "APT1_attribution",
          "patterns": ["Which country employs APT1?", "APT1 country?", "Nationality of APT1?", "APT1 nationality?", "Country of APT1?", "Country of origin of APT1?", "APT1 nation?"],
          "responses": ["APT1 is a Chinese state-sponsored group"],
@@ -307,6 +363,11 @@
         {"tag": "APT1_malware",
          "patterns": ["What malware have been used by APT1?", "APT1 malware?", "Malware of APT1?", "APT1 associated malware?", "Associated malware of APT1?", "Malware used by APT1?"],
          "responses": ["TROJAN.ECLTYS, BACKDOOR.BARKIOFORK, BACKDOOR.WAKEMINAP, TROJAN.DOWNBOT, BACKDOOR.DALBOT, BACKDOOR.REVIRD, TROJAN.BADNAME, BACKDOOR.WUALESS"],
+         "context_set": ""
+        },
+        {"tag": "APT1_report",
+         "patterns": ["Where can I find information about APT1?", "Where can I find info about APT1?", "Where can I find material about APT1?", "Where can I find blogs about APT1?","Where can I find more webinars about APT1?","APT42 material?", "APT1 reports?", "APT1 blog?", "APT1 webinar?"],
+         "responses": ["https://www.fireeye.com/content/dam/fireeye-www/services/pdfs/mandiant-apt1-report.pdf, https://www.fireeye.com/current-threats/annual-threat-report/mtrends/rpt-2014-mtrends.html"],
          "context_set": ""
         },
         {"tag": "APT39_attribution",
@@ -334,6 +395,11 @@
          "responses": ["The group primarily leverages the SEAWEED and CACHEMONEY backdoors along with a specific variant of the POWBAT backdoor."],
          "context_set": ""
         },
+        {"tag": "APT39_report",
+         "patterns": ["Where can I find information about APT39?", "Where can I find info about APT39?", "Where can I find material about APT39?", "Where can I find blogs about APT39?","Where can I find more webinars about APT39?","APT42 material?", "APT39 reports?", "APT39 blog?", "APT39 webinar?"],
+         "responses": ["https://www.fireeye.com/blog/threat-research/20399/039/apt39-iranian-cyber-espionage-group-focused-on-personal-information.html"],
+         "context_set": ""
+        },
         {"tag": "APT34_attribution",
          "patterns": ["Which country employs APT34?", "APT34 country?", "Nationality of APT34?", "APT34 nationality?", "Country of APT34?", "Country of origin of APT34?", "APT34 nation?"],
          "responses": ["APT34 is an Iranian state-sponsored group"],
@@ -357,6 +423,11 @@
         {"tag": "APT34_malware",
          "patterns": ["What malware have been used by APT34?", "APT34 malware?", "Malware of APT34?", "APT34 associated malware?", "Associated malware of APT34?", "Malware used by APT34?"],
          "responses": ["POWBAT, POWRUNER, BONDUPDATER."],
+         "context_set": ""
+        },
+        {"tag": "APT34_report",
+         "patterns": ["Where can I find information about APT34?", "Where can I find info about APT34?", "Where can I find material about APT34?", "Where can I find blogs about APT34?","Where can I find more webinars about APT34?","APT42 material?", "APT34 reports?", "APT34 blog?", "APT34 webinar?"],
+         "responses": ["https://www.fireeye.com/blog/threat-research/2017/12/targeted-attack-in-middle-east-by-apt34.html"],
          "context_set": ""
         },
         {"tag": "APT33_attribution",
@@ -384,6 +455,11 @@
          "responses": ["SHAPESHIFT, DROPSHOT, TURNEDUP, NANOCORE, NETWIRE, ALFA Shell."],
          "context_set": ""
         },
+        {"tag": "APT33_report",
+         "patterns": ["Where can I find information about APT33?", "Where can I find info about APT33?", "Where can I find material about APT33?", "Where can I find blogs about APT33?","Where can I find more webinars about APT33?","APT42 material?", "APT33 reports?", "APT33 blog?", "APT33 webinar?"],
+         "responses": ["https://www.fireeye.com/blog/threat-research/2017/09/apt33-insights-into-iranian-cyber-espionage.html, https://www.brighttalk.com/webcast/10703/275683?utm_source=website&utm_medium=aptpg&utm_content=webinar"],
+         "context_set": ""
+        },
         {"tag": "APT38_attribution",
          "patterns": ["Which country employs APT38?", "APT38 country?", "Nationality of APT38?", "APT38 nationality?", "Country of APT38?", "Country of origin of APT38?", "APT38 nation?"],
          "responses": ["APT38 is a North Korean (Democratic People’s Republic of Korea, DPRK) state-sponsored group"],
@@ -407,6 +483,11 @@
         {"tag": "APT38_malware",
          "patterns": ["What malware have been used by APT38?", "APT38 malware?", "Malware of APT38?", "APT38 associated malware?", "Associated malware of APT38?", "Malware used by APT38?"],
          "responses": ["This large and prolific group uses a variety of custom malware families, including backdoors, tunnelers, dataminers, and destructive malware to steal millions of dollars from financial institutions and render victim networks inoperable."],
+         "context_set": ""
+        },
+        {"tag": "APT38_report",
+         "patterns": ["Where can I find information about APT38?", "Where can I find info about APT38?", "Where can I find material about APT38?", "Where can I find blogs about APT38?","Where can I find more webinars about APT38?","APT42 material?", "APT38 reports?", "APT38 blog?", "APT38 webinar?"],
+         "responses": ["https://content.fireeye.com/apt/rpt-apt38, https://www.fireeye.com/blog/threat-research/2018/10/apt38-details-on-new-north-korean-regime-backed-threat-group.html"],
          "context_set": ""
         },
         {"tag": "APT37_attribution",
@@ -434,6 +515,11 @@
          "responses": ["A diverse suite of malware for initial intrusion and exfiltration. Along with custom malware used for espionage purposes, APT37 also has access to destructive malware."],
          "context_set": ""
         },
+        {"tag": "APT37_report",
+         "patterns": ["Where can I find information about APT37?", "Where can I find info about APT37?", "Where can I find material about APT37?", "Where can I find blogs about APT37?","Where can I find more webinars about APT37?","APT42 material?", "APT37 reports?", "APT37 blog?", "APT37 webinar?"],
+         "responses": ["https://www2.fireeye.com/rs/848-DID-242/images/rpt_APT37.pdf, https://www.fireeye.com/blog/threat-research/2018/02/apt37-overlooked-north-korean-actor.html"],
+         "context_set": ""
+        },
         {"tag": "APT29_attribution",
          "patterns": ["Which country employs APT29?", "APT29 country?", "Nationality of APT29?", "APT29 nationality?", "Country of APT29?", "Country of origin of APT29?", "APT29 nation?"],
          "responses": ["APT29 is a Russian state-sponsored group"],
@@ -457,6 +543,11 @@
         {"tag": "APT29_malware",
          "patterns": ["What malware have been used by APT29?", "APT29 malware?", "Malware of APT29?", "APT29 associated malware?", "Associated malware of APT29?", "Malware used by APT29?"],
          "responses": ["HAMMERTOSS, TDISCOVER, UPLOADER."],
+         "context_set": ""
+        },
+        {"tag": "APT29_report",
+         "patterns": ["Where can I find information about APT29?", "Where can I find info about APT29?", "Where can I find material about APT29?", "Where can I find blogs about APT29?","Where can I find more webinars about APT29?","APT42 material?", "APT29 reports?", "APT29 blog?", "APT29 webinar?"],
+         "responses": ["https://www.fireeye.com/current-threats/apt-groups/rpt-apt29.html"],
          "context_set": ""
         },
         {"tag": "APT28_attribution",
@@ -484,6 +575,11 @@
          "responses": ["CHOPSTICK, SOURFACE."],
          "context_set": ""
         },
+        {"tag": "APT28_report",
+         "patterns": ["Where can I find information about APT28?", "Where can I find info about APT28?", "Where can I find material about APT28?", "Where can I find blogs about APT28?","Where can I find more webinars about APT28?","APT42 material?", "APT28 reports?", "APT28 blog?", "APT28 webinar?"],
+         "responses": ["https://www.fireeye.com/current-threats/apt-groups/rpt-apt28.html, https://www.fireeye.com/blog/threat-research/2015/04/probable_apt28_useo.html, https://www.fireeye.com/blog/threat-research/2014/10/apt28-a-window-into-russias-cyber-espionage-operations.html, https://www.fireeye.com/current-threats/apt-groups/rpt-apt28.html"],
+         "context_set": ""
+        },
         {"tag": "APT32_attribution",
          "patterns": ["Which country employs APT32?", "APT32 country?", "Nationality of APT32?", "APT32 nationality?", "Country of APT32?", "Country of origin of APT32?", "APT32 nation?"],
          "responses": ["APT32 is a Vietnamese state-sponsored group"],
@@ -507,6 +603,11 @@
         {"tag": "APT32_malware",
          "patterns": ["What malware have been used by APT32?", "APT32 malware?", "Malware of APT32?", "APT32 associated malware?", "Associated malware of APT32?", "Malware used by APT32?"],
          "responses": ["SOUNDBITE, WINDSHIELD, PHOREAL, BEACON, KOMPROGO."],
+         "context_set": ""
+        },
+        {"tag": "APT32_report",
+         "patterns": ["Where can I find information about APT32?", "Where can I find info about APT32?", "Where can I find material about APT32?", "Where can I find blogs about APT32?","Where can I find more webinars about APT32?","APT42 material?", "APT32 reports?", "APT32 blog?", "APT32 webinar?"],
+         "responses": ["https://www.fireeye.com/blog/threat-research/2017/05/cyber-espionage-apt32.html"],
          "context_set": ""
         },
         {"tag": "APT5_attribution",
@@ -533,6 +634,11 @@
          "patterns": ["What malware have been used by APT5?", "APT5 malware?", "Malware of APT5?", "APT5 associated malware?", "Associated malware of APT5?", "Malware used by APT5?"],
          "responses": ["LEOUNCIA."],
          "context_set": ""
-        }
-   ]
+        },
+        {"tag": "APT5_report",
+         "patterns": ["Where can I find information about APT5?", "Where can I find info about APT5?", "Where can I find material about APT5?", "Where can I find blogs about APT5?","Where can I find more webinars about APT5?","APT42 material?", "APT5 reports?", "APT5 blog?", "APT5 webinar?"],
+         "responses": ["https://www.fireeye.com/content/dam/fireeye-www/current-threats/pdfs/rpt-southeast-asia-threat-landscape.pdf , https://www.rsaconference.com/industry-topics/presentation?searchSort=date-desc "],
+         "context_set": ""
+      }
+  ]
 }
