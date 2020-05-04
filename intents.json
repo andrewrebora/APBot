@@ -306,7 +306,7 @@
          "context_set": ""
         },
         {"tag": "APT10_report",
-         "patterns": ["Where can I find information about APT10?", "Where can I find info about APT10?", "Where can I find material about APT10?", "Where can I find blogs about APT10?","Where can I find more webinars about APT10?","APT42 material?", "APT10 reports?", "APT10 blog?", "APT10 webinar?"],
+         "patterns": ["Where can I find information about APT10?", "Where can I find info about APT10?", "Where can I find material about APT10?", "Where can I find blogs about APT10?","Where can I find more webinars about APT10?","APT10 material?", "APT10 reports?", "APT10 blog?", "APT10 webinar?"],
          "responses": ["https://www.fireeye.com/blog/threat-research/2018/09/apt10-targeting-japanese-corporations-using-updated-ttps.html, https://www.fireeye.com/blog/threat-research/2017/04/apt10_menupass_grou.html"],
          "context_set": ""
         },
